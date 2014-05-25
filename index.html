@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h3>Interval Training Timer</h3>
+		</div>
+		<div data-role="content">
+			<img src="home.png" style="width: 100%">
+			<ul data-role="listview">
+				<li><a href="#one">Tabata Method</a></li>
+				<li><a href="#two">Little Method</a></li>
+				<li><a href="#three">Turbulence Method</a></li>
+				<li><a href="#four">Custom</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="page" id="one">
+		<div data-role="header">
+			<a data-role="button" href="#home" class="ui-btn-left" data-transition="fade">Home</a>
+			<h3>Tabata Method</h3>
+		</div>
+		<div data-role="content">
+			<h4>20 seconds of Work</h4>
+			<h4>10 seconds of Rest</h4>
+			<h4>8 repetitions</h4>
+		</div>
+	</div>
+	<div data-role="page" id="two">
+		<div data-role="header">
+			<a data-role="button" href="#home" class="ui-btn-left" data-transition="fade">Home</a>
+			<h3>Little Method</h3>
+		</div>
+		<div data-role="content">
+			<h4>60 seconds of Work</h4>
+			<h4>75 seconds of Rest</h4>
+			<h4>12 cycles</h4>
+		</div>
+	</div>
+	<div data-role="page" id="three">
+		<div data-role="header">
+			<a data-role="button" href="#home" class="ui-btn-left" data-transition="fade">Home</a>
+			<h3>Turbulence Method</h3>
+		</div>
+		<div data-role="content">
+			<h4>Resistance set</h4>
+			<h4>2 minutes of Cardio</h4>
+			<h4>For 45 minutes</h4>
+		</div>
+	</div>
+	<div data-role="page" id="four">
+		<div data-role="header">
+			<a data-role="button" href="#home" class="ui-btn-left" data-transition="fade">Home</a>
+			<h3>Custom Method</h3>
+		</div>
+		<div data-role="content">
+			<form>
+				<label for="number-pattern">Duration of Work</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="30">
+				<label for="number-pattern">Duration of Rest</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="30">
+				<label for="number-pattern">Number of Repetitions</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="8">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
